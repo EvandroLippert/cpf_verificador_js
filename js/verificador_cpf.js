@@ -17,22 +17,6 @@ campo_cpf.addEventListener('keyup', function(campo_cpf) {
         }
     }
     if (cpf.length == 11){
-        if (cpf == '00000000000'){
-            if (!document.getElementById('cpf_invalido')){
-                        if (document.getElementById('cpf_valido')){
-                            document.getElementById('cpf_valido').remove();
-                        }
-                        invalid_cpf = document.createElement('div');
-                        invalid_cpf.className = "text-danger";
-                        invalid_cpf.id = 'cpf_invalido';
-                        small = document.createElement('SMALL');
-                        text = document.createTextNode("CPF Inválido");
-                        small.append(text);
-                        invalid_cpf.appendChild(small);
-                        document.getElementById("div_id_cpf").appendChild(invalid_cpf);
-                        console.log('cpf_cortado: ', cpf_cortado);
-                    }
-                }
         while (cpf_cortado.length < 11){
             var soma = 0;
             var j = cpf_cortado.length + 1;
