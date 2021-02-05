@@ -21,7 +21,7 @@ campo_cpf.addEventListener('keyup', function(campo_cpf) {
             var soma = 0;
             var j = cpf_cortado.length + 1;
             for (var i = 0; i < cpf_cortado.length; i++){
-                soma = soma + Number(cpf_cortado[i]);
+                soma += j * Number(cpf_cortado[i]);
                 j = j - 1;
             }
 
